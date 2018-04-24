@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Introduction</title>
+    <link>/blog/</link>
+    <description>Recent content in Blogs on Introduction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Jun 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Brexit polling</title>
+      <link>/blog/brexit-polling/</link>
+      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/brexit-polling/</guid>
+      <description>Others can discuss elsewhere the broader implications of Brexit. I want to make a few brief points about the Brexit polling.
+The polls were about as accurate as I&amp;rsquo;d expect. Mostly they reported that the referendum was going to be close. Generally, their interval of expected outcomes included the critical 50 per cent level. I&amp;rsquo;d say the result was not unexpected by the models.
+But probabilistic thinking is more difficult for humans.</description>
+    </item>
+    
+    <item>
+      <title>Who do you trust?</title>
+      <link>/blog/who-do-you-trust/</link>
+      <pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/who-do-you-trust/</guid>
+      <description>This is the first in a series of posts analyzing tweets about the election.
+What do you remember about the 2004 election? Perhaps it was the Howard-Latham handshake, the worm, or Medicare Gold.
+I remember Howard making the election about trust. &amp;hellip;Who do you trust to keep the economy strong and protect family living standards? Who do you trust to keep interest rates low? Who do you trust to lead the fight on Australia&amp;rsquo;s behalf against international terrorism?</description>
+    </item>
+    
+    <item>
+      <title>Model updates</title>
+      <link>/blog/model-updates/</link>
+      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/model-updates/</guid>
+      <description>We use a multilevel regression and post-stratification (MRP) approach to obtain estimates of voting intent. Our approach closely follows the approach used by Ghitza and Gelman (2013). However, this week we made some changes to the underlying model, to better make use of the information obtained from the weekly polls.
+A brief description of the model framework: First, we split up the sample of respondents into subgroups based on sex, age and education.</description>
+    </item>
+    
+    <item>
+      <title>Our database</title>
+      <link>/blog/our-database/</link>
+      <pubDate>Fri, 10 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/our-database/</guid>
+      <description>Petit Poll uses biased samples. Traditionally, this would make our results meaningless, but we are able to make reasonable conclusions because we tie our samples to representative data.
+The best option for this representative data would be a large exit poll from the 2013 election. But, I was not able to find an appropriate dataset. Luckily, as an ANU student, I have access to the Australian Election Study (AES) database. This is available via the Australian Data Archive - thank you!</description>
+    </item>
+    
+    <item>
+      <title>What our ads look like</title>
+      <link>/blog/what-our-ads-look-like/</link>
+      <pubDate>Sun, 05 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/what-our-ads-look-like/</guid>
+      <description>WHAT OUR ADS LOOK LIKE June 5, 2016
+Unless you live in Canberra you are unlikely to be exposed to our Facebook/Twitter ads. So I thought I&amp;rsquo;d take a moment to show you what they look like.
+Our current Facebook/Twitter ads look like this:
+Screen Shot 2016-06-05 at 11.21.29.pngScreen Shot 2016-06-05 at 11.27.31.png They (hopefully) draw a viewer in with the photo, and then ask a question about the photo. For those who don&amp;rsquo;t know, these are images of Canberra, and many Canberrans would recognize them.</description>
+    </item>
+    
+    <item>
+      <title>Our advertising campaigns</title>
+      <link>/blog/our-advertising-campaigns/</link>
+      <pubDate>Thu, 02 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/our-advertising-campaigns/</guid>
+      <description>Watching Mad Men is the extent of my marketing experience. But n (the sample size) is an unavoidable aspect of confidence intervals. So I need more respondents than just my family and friends. This means advertising.
+We&amp;rsquo;ve advertised on both Facebook and Twitter. Facebook ads, on a click-through basis, seem cheaper than Twitter ads. For instance, the initial Twitter advertising campaign cost about \$3.00 per click-through to our website, compared with less than \$1.</description>
+    </item>
+    
+    <item>
+      <title>User privacy</title>
+      <link>/blog/user-privacy/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/user-privacy/</guid>
+      <description>Introduction Maintaining the trust of people who participate in Petit Poll is a critical aspect of operating Petit Poll. I would prefer to shut down Petit Poll than undermine that trust. Please point out any mistakes that I am making or areas that I could improve.
+Response collection The primary way that Petit Poll collects responses is via forms that are hosted on our website (https://www.petitpoll.com/initial-poll and https://www.petitpoll.com/intention-poll). The website is now served over HTTPS meaning that responses should be encrypted in transit.</description>
+    </item>
+    
+    <item>
+      <title>Hello from Chicago</title>
+      <link>/blog/hello-from-chicago/</link>
+      <pubDate>Mon, 23 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/hello-from-chicago/</guid>
+      <description>Sorry for the silence for the past few days. I was busy with a presentation at the end of last week, and over the weekend Monica and I moved to Chicago for summer which meant moving out of our Berkeley apartment.
+Expect an update on the latest polling tomorrow, and continued improvements to Petit Poll over this week as we get back into it.</description>
+    </item>
+    
+    <item>
+      <title>A thimble of success</title>
+      <link>/blog/a-thimble-of-success/</link>
+      <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/a-thimble-of-success/</guid>
+      <description>We just ran the model on the tiny sample that we were able to gather from friends and family. There are a huge number of issues that we still need to solve, but the process seems to work.
+We have the election at 50:50 (this number is meaningless for any purpose other than suggesting that our process seems to work and the model outputs a number that isn&amp;rsquo;t outrageous).
+Nonetheless, to celebrate this thimble&amp;rsquo;s worth of success I will be at the bar with at least a teapot&amp;rsquo;s worth of beer.</description>
+    </item>
+    
+    <item>
+      <title>Facebook ad process</title>
+      <link>/blog/facebook-ad-process/</link>
+      <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/facebook-ad-process/</guid>
+      <description>We started our Facebook ad process last night. Essentially the ad was just a reasonably iconic Australian photo similar to the type on this website, a brief explanation of the importance of having an opinion, and a plea to take our surveys. We had four different photos on rotation and for $8.93 the ad was served to 860 people, but only one person signed up.
+Unfortunately I found out this morning that the ad breached Facebook&amp;rsquo;s ad policies and so we have now made it inactive.</description>
+    </item>
+    
+    <item>
+      <title>Beta-email initial responses</title>
+      <link>/blog/beta-email-initial-responses/</link>
+      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/beta-email-initial-responses/</guid>
+      <description>Beta-email is a group of friends and family who signed up for our polls. Although the group, at about 40, is small it is very useful for testing questions as well as establishing Petit Poll&amp;rsquo;s processes and initial results.
+In general, the group is more male, younger, and more educated than the Australian population.
+Age.png Education.png Gender.png The major parties are well represented in terms of who respondents voted for in 2013.</description>
+    </item>
+    
+    <item>
+      <title>Twitter account</title>
+      <link>/blog/twitter-account/</link>
+      <pubDate>Tue, 10 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/twitter-account/</guid>
+      <description>Petit Poll&amp;rsquo;s Twitter account is live and now integrated into the footer of the website. You can follow us at:
+https://twitter.com/petitpoll</description>
+    </item>
+    
+    <item>
+      <title>Live From California</title>
+      <link>/blog/live-from-california/</link>
+      <pubDate>Mon, 09 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/live-from-california/</guid>
+      <description>I got onto the plane (enplaned?) in Sydney an hour or so before Turnbull went to see the GG, which meant that when I landed (and deplaned?) in San Francisco the election was well underway.
+The response to the initial friends/family email went well. Out of 40 emails sent, there were 20 responses, and 6 people took the time to email me with suggested improvements – thank you. Unless someone can suggest a better name I&amp;rsquo;m calling this group &amp;lsquo;beta-email&amp;rsquo; and I&amp;rsquo;ll continue to seed it with friends/family this week so that it hopefully gets to at least 50-strong before the proper polling of it begins next week.</description>
+    </item>
+    
+    <item>
+      <title>Federal Election Plans</title>
+      <link>/blog/federal-election-plans/</link>
+      <pubDate>Sat, 07 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/federal-election-plans/</guid>
+      <description>In a few hours Malcolm Turnbull is expected to announce an election. This will be Petit Poll&amp;rsquo;s first outing and our initial surveys are ready to go.
+The plan at the moment is an initial distribution of the surveys to friends/family to help work out any issues with the questions and the reporting process. We should have our first results at that time and they&amp;rsquo;ll be posted here.
+After those first few days of the campaign we&amp;rsquo;ll have a wider roll-out.</description>
+    </item>
+    
+    <item>
+      <title>Version 0.1</title>
+      <link>/blog/version-0-1/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/version-0-1/</guid>
+      <description>Petit Poll&amp;rsquo;s version 0.1 first test delivered the hoped for result. An example poll was randomly generated to a particular overall 2PP value and then most of the data removed. On the basis of that reduced dataset, the model was able to return a similar overall 2PP. The result is a nice sign that something is going well in the model.</description>
+    </item>
+    
+  </channel>
+</rss>

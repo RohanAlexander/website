@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Website Description">
+
+<base href="/">
+<title>
+
+
+     User privacy 
+
+</title>
+<link rel="canonical" href="/blog/user-privacy/">
+
+
+
+
+
+
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/nunito_sans.css">
+
+
+    <link rel="stylesheet" href="css/light-style.css">
+
+
+
+
+
+
+<link rel="shortcut icon" href="img/fav.ico">
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div class="section" id="top">
+
+    <div class="container hero fade-in one">
+    <h1 class="bold-title is-1">Blog</h1>
+    </div>
+
+
+<div class="section fade-in two">
+
+    <div class="container">
+    <hr>
+<nav class="nav nav-center">
+    <span id="nav-toggle" class="nav-toggle"  onclick="document.getElementById('nav-menu').classList.toggle('is-active');">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div id="nav-menu" class="nav-left nav-menu">
+      <span class="nav-item">
+        <a href="/">Main</a>
+      </span>
+      <span class="nav-item">
+        <a href="/#about">About</a>
+      </span>
+      
+      <span class="nav-item">
+        <a href="/blog">Back to blog</a>
+      </span>
+      
+      <span class="nav-item">
+        <a href="/#contact">Contact</a>
+      </span>
+    
+      <span class="nav-item">
+        <a href="/index.xml"><i class="fa fa-rss"></i></a>
+      </span>
+    
+    </div>
+</nav>
+<hr>
+
+    </div>
+
+    <div class="container fade-in two">
+        <h2 class="title is-1 top-pad strong-post-title"><a href="/blog/user-privacy/">User privacy</a></h2>
+            <div class="post-data">
+                May 25, 2016 |
+                3 minutes read
+            </div>
+
+            
+                <div class="blog-share">
+                Share this:
+                
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Read%20User%20privacy%20%2fblog%2fuser-privacy%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+                </a>
+                
+                 
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2fblog%2fuser-privacy%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+                </a>
+                
+                
+                
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=%2fblog%2fuser-privacy%2f"
+                onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+                </a>
+                
+                </div>
+            
+
+    </div>
+
+    <div class="container markdown fade-in two top-pad">
+        
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Maintaining the trust of people who participate in Petit Poll is a critical aspect of operating Petit Poll. I would prefer to shut down Petit Poll than undermine that trust. Please point out any mistakes that I am making or areas that I could improve.</p>
+
+<h1 id="response-collection">Response collection</h1>
+
+<p>The primary way that Petit Poll collects responses is via forms that are hosted on our website (<a href="https://www.petitpoll.com/initial-poll">https://www.petitpoll.com/initial-poll</a> and <a href="https://www.petitpoll.com/intention-poll">https://www.petitpoll.com/intention-poll</a>). The website is now served over HTTPS meaning that responses should be encrypted in transit. The forms save to Google spreadsheets. (In the past we used Google forms for survey responses, and again those went into Google spreadsheets). Google spreadsheets should be secure, so long as they are set up properly, but if anyone knows differently then please let me know.</p>
+
+<h1 id="initial-poll">Initial Poll</h1>
+
+<p>When we want to analyze the responses I download the Google spreadsheet to my computer as a CSV. Let&rsquo;s call this the ‘raw database’. I run a script in R that first isolates the email addresses and first names (when they were asked for; they are no longer asked for), randomizes their order, and then saves them into a separate &lsquo;emails database&rsquo; that is then used to send email invitations to future surveys, but contains no other information.</p>
+
+<p>At this point the first names are deleted from the raw database. (Again, first names are no longer asked for in the Initial Form so this step is not needed). Email addresses in the raw database are then salted and hashed. We have to keep the hashed version of them because we need them to link responses from the Initial Poll with the Intention Poll, but we don&rsquo;t need to keep them as email addresses in the raw database.</p>
+
+<p>A hash means that the emails are transformed in a way that the output is the same if the input is the same i.e. ‘rohan@example.com’ is always transformed into 1234abcd5678, but the transformation is one-way only - if our raw database leaks and you know that 1234abcd5678 would vote for Daenerys Targaryen, you shouldn’t be able to know that 1234abcd5678 is rohan@example.com. Adding salt means that is someone gets our list of emails they can&rsquo;t simply hash them and compare the hash outputs to associate responses with email addresses.</p>
+
+<h1 id="intention-poll">Intention Poll</h1>
+
+<p>At this point the raw database has a hash of each email address (not the actual email address), along with the responses to the questions that were asked in the Initial Poll. When a person responds to the Intention Poll they submit their email address and their intention. This email address is hashed and the hash is used to match their current intention their existing data in the raw database (both previous intentions as well as demographic and political history).</p>
+
+<p>It is only now that the raw database is used for analysis, and the model is run on it.</p>
+
+<h1 id="weaknesses">Weaknesses</h1>
+
+<p>At this point, respondents need to trust that I don’t look at their responses. I’m not sure how to get around this. Also I’m not sure whether salting and hashing the emails is the best way to preserve anonymity if the database leaks. There may be some best-practices from medical or psychology research that we can adopt and I&rsquo;ll be looking into these in the next few weeks.</p>
+
+    </div>
+
+    <div class="disqus">
+        
+    </div>
+
+<div class="container has-text-centered top-pad">
+<hr>
+<a href="/blog/user-privacy/#top"><i class="fa fa-arrow-up"></i></a>
+<hr>
+</div>
+
+<div class="section" id="footer">
+    <div class="container has-text-centered">
+        
+        <span class="footer-text"><a href="https://github.com/hivickylai/hugo-theme-introduction" target="_blank" rel="noopener">Introduction</a> theme for <a href="http://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. Made with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i>. <a href="https://vickylai.io" target="_blank" rel="noopener">Vicky Lai</a> 2018</span>
+        
+    </div>
+</div>
+
+</div>
+</div>
+
+
+<script>
+$('a[href^="\/blog\/user-privacy\/#"]').click(function(e) {
+    e.preventDefault();
+    var target = this.hash;
+    $('html, body').animate({
+    scrollTop: $(target).offset().top
+    }, 500);
+    return false;
+})
+</script>
+
+</body>

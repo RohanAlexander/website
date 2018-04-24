@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Introduction</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Introduction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jun 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Our advertising campaigns</title>
+      <link>/post/our-advertising-campaigns/</link>
+      <pubDate>Thu, 02 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/our-advertising-campaigns/</guid>
+      <description>Watching Mad Men is the extent of my marketing experience. But n (the sample size) is an unavoidable aspect of confidence intervals. So I need more respondents than just my family and friends. This means advertising.
+We&amp;rsquo;ve advertised on both Facebook and Twitter. Facebook ads, on a click-through basis, seem cheaper than Twitter ads. For instance, the initial Twitter advertising campaign cost about \$3.00 per click-through to our website, compared with less than \$1.</description>
+    </item>
+    
+  </channel>
+</rss>
