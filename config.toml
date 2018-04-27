@@ -60,3 +60,5 @@ canonifyurls            = true                              # Turns relative url
     url = "https://github.com/PetitPoll"
     icon = "github"
 
+[context.production.environment]
+      HUGO_VERSION = "0.38.2"
