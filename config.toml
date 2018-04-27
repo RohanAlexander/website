@@ -59,6 +59,5 @@ canonifyurls            = true                              # Turns relative url
 [[params.social]]
     url = "https://github.com/PetitPoll"
     icon = "github"
-
-[context.production.environment]
-      HUGO_VERSION = "0.38.2"
+    [context.production.environment]
+          HUGO_VERSION = "0.38.2"
