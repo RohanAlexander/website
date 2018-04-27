@@ -4,11 +4,11 @@ date: 2017-03-09T13:19:25+08:00
 ---
 
 ### Overview
-Petit Poll combines data from biased surveys with statistical methods to generate meaningful results. We are able to gain an understanding of opinion at a more granular level because biased surveys have lower costs and our Bayesian hierarchical models share information as appropriate.
+Petit Poll combines data from biased surveys with statistical methods to generate meaningful results. We are able to gain an understanding of opinion at a more granular level because biased surveys have lower costs and our model shares information as appropriate.
 
 We gather non-representative samples combined with demographic and other data. We then use statistical models to 'scale up' the samples to provide results that are meaningful and akin to representative results. Petit Poll augments, rather than replaces, traditional polls such as Roy Morgan, Newspoll, Galaxy, etc.
 
-Petit Poll's statistical approach is developed in Wang, Rothschild, Goel and Gelman (2014). Our initial specific implementation of the model (written in R using JAGS) is available on request. Note that this is a beta version of our model and we will continue refining it and improving our processes.
+Petit Poll's statistical approach is developed in Wang, Rothschild, Goel and Gelman (2014). 
 
 ### Team
 Monica and Rohan Alexander are the co-founders of Petit Poll. Monica is a PhD candidate in the Demography Department at the University of California, Berkeley. She holds a Bachelor of Science (mathematics and chemistry) degree from the University of Tasmania, a Master of Social Research degree from the Australian National University (ANU) and Master of Arts degrees (statistics and demography) from Berkeley. In July 2018 she is joining the University of Toronto as an Assistant Professor in the departments of Statistical Sciences and Sociology.
